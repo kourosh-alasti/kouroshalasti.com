@@ -7,7 +7,7 @@ export const RootLayout = () => {
       <footer className="bottom-0 mx-5 flex flex-col justify-between overflow-hidden text-[90%] md:flex-row">
         <div className="flex flex-col">
           <div className="font-bold hover:font-extrabold">
-            <a href="">projects</a>
+            <a href="/projects">projects</a>
           </div>
           <div className="font-bold hover:font-extrabold">
             <a
