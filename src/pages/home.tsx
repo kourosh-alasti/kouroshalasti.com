@@ -1,0 +1,39 @@
+import { CopyIcon } from "lucide-react";
+import tempLogo from "/temp.png";
+import { Link } from "react-router-dom";
+
+function HomePage() {
+  return (
+    <main className="flex min-h-[90vh] flex-col items-center justify-center overflow-hidden ">
+      <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-8">
+        <div className="h-[30%] flex-1 md:h-full">
+          <img src={tempLogo} alt="KA" className="h-44 w-44" />
+        </div>
+        <div className="flex flex-col gap-1 md:gap-2">
+          <h1 className="text-[3.5rem] font-extrabold md:text-[5.5rem]">
+            Kourosh Alasti
+          </h1>
+          <div className="flex flex-col gap-1">
+            <div className="flex justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
+              <h3>git clone kourosh-alasti</h3>
+              <Link to={"https://github.com/kourosh-alasti"}>
+                <CopyIcon className="text-gray-400 hover:cursor-pointer hover:text-gray-200" />
+              </Link>
+            </div>
+            <div>
+              alastisolutions is{" "}
+              <a
+                href="https://alastisolutions.org"
+                className="font-bold no-underline hover:cursor-pointer hover:font-extrabold"
+              >
+                here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default HomePage;
