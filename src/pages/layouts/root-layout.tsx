@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export const RootLayout = () => {
   return (
@@ -7,7 +7,7 @@ export const RootLayout = () => {
       <footer className="bottom-0 mx-5 flex flex-col justify-between overflow-hidden text-[90%] md:flex-row">
         <div className="flex flex-col">
           <div className="font-bold hover:font-extrabold">
-            <a href="/projects">projects</a>
+            <Link to="/projects">projects</Link>
           </div>
           <div className="font-bold hover:font-extrabold">
             <a
