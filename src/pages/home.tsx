@@ -1,5 +1,5 @@
 import { CopyIcon } from "lucide-react";
-import tempLogo from "/temp.png";
+import logo from "../assets/logo_main.png";
 import { Link } from "react-router-dom";
 
 function HomePage() {
@@ -7,7 +7,7 @@ function HomePage() {
     <main className="flex min-h-[90vh] flex-col items-center justify-center overflow-hidden ">
       <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-8">
         <div className="h-[30%] flex-1 md:h-full">
-          <img src={tempLogo} alt="KA" className="h-44 w-44" />
+          <img src={logo} alt="KA" className="h-44 w-44" />
         </div>
         <div className="flex flex-col gap-1 md:gap-2">
           <h1 className="text-[3.5rem] font-extrabold md:text-[5.5rem]">
