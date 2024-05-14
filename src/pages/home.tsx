@@ -1,6 +1,5 @@
 import { CopyIcon } from "lucide-react";
 import logo from "../assets/logo_main.png";
-import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -16,9 +15,9 @@ function HomePage() {
           <div className="flex flex-col gap-1">
             <div className="flex justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
               <h3>git clone kourosh-alasti</h3>
-              <Link to={"https://github.com/kourosh-alasti"}>
+              <a target="_blank" href="https://github.com/kourosh-alasti">
                 <CopyIcon className="text-gray-400 hover:cursor-pointer hover:text-gray-200" />
-              </Link>
+              </a>
             </div>
             <div>
               alastisolutions is{" "}
