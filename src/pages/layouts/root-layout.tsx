@@ -4,10 +4,10 @@ export const RootLayout = () => {
   return (
     <div className="mx-auto flex h-full min-h-full w-full max-w-screen-xl flex-col justify-center">
       <Outlet />
-      <footer className="bottom-0 mx-5 flex flex-col justify-between overflow-hidden text-[90%] md:flex-row">
-        <div className="flex flex-col">
+      <footer className="bottom-0 mx-5 flex flex-col items-center justify-between gap-1 overflow-hidden text-right text-[90%] md:flex-row md:items-end md:text-left">
+        <div className="flex flex-col rounded-md border px-3 py-1">
           <div className="font-bold hover:font-extrabold">
-            <Link to="/projects">projects</Link>
+            <Link to="/projects"> &rarr; my projects</Link>
           </div>
           <div className="font-bold hover:font-extrabold">
             <a
@@ -15,13 +15,11 @@ export const RootLayout = () => {
               href="
             mailto:coding@kouroshalasti.com?cc=kouroshalastibusiness@gmail.com"
             >
-              commissions available
+              email me &larr;
             </a>
           </div>
         </div>
-        <div className="max right-0 float-none self-end text-right">
-          &copy; 2024 Kourosh Alasti
-        </div>
+        <div className="">&copy; 2024 Kourosh Alasti</div>
       </footer>
     </div>
   );

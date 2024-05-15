@@ -54,13 +54,13 @@ const projects = [
 function ProjectsPage() {
   return (
     <main className=" mb-6 flex min-h-[90vh] flex-col items-center justify-center overflow-hidden">
-      <Link to="/">
+      <Link to="/" className="mt-4">
         <div className="flex items-center justify-center gap-1 justify-self-start">
           <ArrowLeft />
           <h1>go back</h1>
         </div>
       </Link>
-      <TracingBeam className="px-6">
+      <TracingBeam className="mb-2 px-6">
         <div className="mt-6 grid grid-cols-1 items-center justify-center gap-2 antialiased md:gap-4">
           {projects.map((project) => (
             <ProjectItem

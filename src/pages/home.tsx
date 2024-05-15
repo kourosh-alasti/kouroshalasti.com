@@ -13,6 +13,9 @@ function HomePage() {
             Kourosh Alasti
           </h1>
           <div className="flex flex-col gap-1">
+            <h4 className="text-lg font-semibold antialiased hover:cursor-not-allowed hover:font-[650] sm:text-xl sm:font-[650] hover:sm:font-bold">
+              Student, Designer, Developer
+            </h4>
             <div className="flex justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
               <h3>git clone kourosh-alasti</h3>
               <a target="_blank" href="https://github.com/kourosh-alasti">
