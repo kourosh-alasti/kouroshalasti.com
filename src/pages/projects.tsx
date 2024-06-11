@@ -6,10 +6,19 @@ import { ProjectItem } from "../components/project-item";
 import frauditImage from "../assets/fraudit.png";
 import rmpImage from "../assets/rmp.png";
 import cliToolImage from "../assets/cli-tool.png";
+import portfolioImage from "../assets/portfolio.png";
 
 const projects = [
   {
-    link: "http://github.com/kourosh-alasti/fraudit",
+    link: "https://github.com/kourosh-alasti/portfolio",
+    title: "My Portfolio",
+    description: "A simple portfolio website to showcase my work and skills",
+    src: portfolioImage,
+    alt: "Portfolio Project Image",
+    tech: ["Vite", "React", "TypeScript", "TailwindCSS"],
+  },
+  {
+    link: "https://github.com/kourosh-alasti/fraudit",
     title: "Fraudit",
     description:
       "Open Source Reddit Clone to bootstrap social platform development",
