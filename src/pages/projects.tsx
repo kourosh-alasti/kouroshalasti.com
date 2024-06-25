@@ -7,6 +7,7 @@ import frauditImage from "../assets/fraudit.png";
 import rmpImage from "../assets/rmp.png";
 import cliToolImage from "../assets/cli-tool.png";
 import portfolioImage from "../assets/portfolio.png";
+import pwdGenImage from "../assets/pwd-gen.png";
 
 const projects = [
   {
@@ -57,6 +58,14 @@ const projects = [
     src: cliToolImage,
     alt: "CLI Tool Project Image",
     tech: ["TypeScript", "Node.JS", "NPM"],
+  },
+  {
+    link: "https://github.com/AlastiSolutions/pwd-gen",
+    title: "Password Generator and Hasher",
+    description: "A Password Generator and Hasher Tool",
+    src: pwdGenImage,
+    alt: "Password Gen Project Image",
+    tech: ["TypeScript", "Node.JS", "PNPM", "Git"],
   },
 ];
 
