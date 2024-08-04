@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import ToolItem from "../components/tool-item";
 import ExperienceItem from "../components/experience-item";
 
 const EXPERIENCES = [
