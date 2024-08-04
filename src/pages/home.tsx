@@ -1,6 +1,6 @@
-import { CopyIcon, MailIcon, FolderGitIcon } from "lucide-react";
+import { CopyIcon, MailIcon, FolderGitIcon, BriefcaseIcon } from "lucide-react";
 import logo from "../assets/logo_main.png";
-import { Link } from "react-router-dom";
+import ActionButton from "../components/action-button";
 
 function HomePage() {
   return (
@@ -17,6 +17,9 @@ function HomePage() {
             <h4 className="text-lg font-semibold antialiased hover:font-[650] sm:text-xl sm:font-[650] hover:sm:font-bold">
               Student, Designer, Developer
             </h4>
+            <h6 className="text-base text-indigo-200/80 sm:text-sm">
+              San Francisco / Los Angeles
+            </h6>
             <div className="flex justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
               <h3>git clone kourosh-alasti</h3>
               <a target="_blank" href="https://github.com/kourosh-alasti">
@@ -40,21 +43,21 @@ function HomePage() {
         </div>
       </div>
       <div className="flex gap-4">
-        <Link to="/projects">
-          <button className="flex gap-2 rounded-md border bg-[#2e2e2e] px-4 py-2 capitalize text-white hover:bg-[#3e3e3e] hover:text-gray-200  hover:opacity-80">
-            <FolderGitIcon />
-            Projects
-          </button>
-        </Link>
-        <Link
+        <ActionButton to="/projects">
+          <FolderGitIcon />
+          Projects
+        </ActionButton>
+        <ActionButton to="/experiences">
+          <BriefcaseIcon />
+          Experience
+        </ActionButton>
+        <ActionButton
           to="mailto:coding@kouroshalasti.com?cc=kouroshalastibusiness@gmail.com"
           target="_blank"
         >
-          <button className="flex gap-2 rounded-md border bg-[#2e2e2e] px-4 py-2 capitalize text-white hover:bg-[#3e3e3e] hover:text-gray-200">
-            <MailIcon />
-            Email Me
-          </button>
-        </Link>
+          <MailIcon />
+          Email Me
+        </ActionButton>
       </div>
     </main>
   );
