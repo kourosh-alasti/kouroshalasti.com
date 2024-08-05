@@ -42,7 +42,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
         <ActionButton to="/projects">
           <FolderGitIcon />
           Projects
