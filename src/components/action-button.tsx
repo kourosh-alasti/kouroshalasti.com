@@ -19,7 +19,7 @@ export default function ActionButton({
     <Link to={to} target={target || "_self"}>
       <button
         className={cn(
-          "flex gap-2 rounded-md border bg-[#2e2e2e] px-4 py-2 capitalize text-white hover:bg-[#3e3e3e] hover:text-gray-200  hover:opacity-80",
+          "flex w-full justify-between gap-2 rounded-md border bg-[#2e2e2e] px-4 py-2 capitalize text-white hover:bg-[#3e3e3e] hover:text-gray-200  hover:opacity-80",
           className,
         )}
       >
