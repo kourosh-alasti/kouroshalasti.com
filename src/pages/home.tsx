@@ -1,4 +1,4 @@
-import { CopyIcon, MailIcon, FolderGitIcon, BriefcaseIcon } from "lucide-react";
+import { CopyIcon, MailIcon, FolderGitIcon, BriefcaseIcon, LinkedinIcon}  from "lucide-react";
 import logo from "../assets/logo_main.png";
 import ActionButton from "../components/action-button";
 
@@ -20,11 +20,19 @@ function HomePage() {
             <h6 className="text-base text-indigo-200/80 sm:text-sm">
               San Francisco / Los Angeles
             </h6>
-            <div className="flex justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
+            <div className="flex flex-row gap-2">
+            <div className="flex flex-1 justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
               <h3>git clone kourosh-alasti</h3>
               <a target="_blank" href="https://github.com/kourosh-alasti">
                 <CopyIcon className="text-gray-400 hover:cursor-pointer hover:text-gray-200" />
               </a>
+            </div>
+
+            <div className="border rounded-md border-gray-700 bg-[#1e1e1e] px-3 py-2">
+            <a href="https://linkedin.com/in/kourosh-alasti" target="_self">
+              <LinkedinIcon/>
+            </a>
+            </div>
             </div>
             {/*
              * Commented out until alastisolutions website is up and running.  Uncomment when ready.
