@@ -38,7 +38,7 @@ const EXPERIENCES = [
   },
   {
     company: "PBXFlex",
-    position: "Frontend Developer",
+    position: "Full Stack Developer",
     dates: "Nov 2023 - Feb 2024",
     bullets: [
       "Developed a VoIP system and admin dashoboard using TypeScript, React, and Next.js, serving over 100 users across 15+ companies",
