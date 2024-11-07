@@ -6,6 +6,7 @@ const EXPERIENCES = [
   {
     company: "Indian Wells Valley Youth Softball",
     position: "Frontend Developer",
+    location: "Ridgecrest, CA",
     dates: "Oct 2022 - June 2024",
     bullets: [
       "Built and launched a user-friendly website, facilitating information distribution to an average of 30 daily unique visitors",
@@ -27,6 +28,7 @@ const EXPERIENCES = [
   {
     company: "North Blue Networks",
     position: "Project Manager",
+    location: "Fullerton, CA",
     dates: "June 2023 - Apr 2024",
     bullets: [
       "Spearheaded Project lifecycles, deliverying 90% of software solutions within deadlines",
@@ -39,6 +41,7 @@ const EXPERIENCES = [
   {
     company: "PBXFlex",
     position: "Full Stack Developer",
+    location: "Fullerton, CA",
     dates: "Nov 2023 - Feb 2024",
     bullets: [
       "Developed a VoIP system and admin dashoboard using TypeScript, React, and Next.js, serving over 100 users across 15+ companies",
@@ -59,17 +62,13 @@ export default function ExperiencesPage() {
         </div>
       </Link>
 
-      <div className="mt-6 grid grid-cols-1 items-center justify-center gap-2 antialiased md:ml-0 md:gap-4">
-        <h2 className="text-center text-lg font-semibold underline underline-offset-[3px] md:text-3xl md:font-bold md:underline-offset-[7px]">
-          Job Experience
-        </h2>
-
         <div className="flex flex-col gap-3">
           {EXPERIENCES.map((exp) => (
             <ExperienceItem {...exp} />
           ))}
         </div>
-      </div>
+
+
     </main>
   );
 }
