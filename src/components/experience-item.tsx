@@ -16,7 +16,6 @@ export default function ExperienceItem({
   position,
   location,
   dates,
-  bullets,
   tools,
 }: Props) {
   return (
