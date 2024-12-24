@@ -1,74 +1,31 @@
-import { CopyIcon, MailIcon, FolderGitIcon, BriefcaseIcon, LinkedinIcon}  from "lucide-react";
-import logo from "../assets/logo_main.png";
-import ActionButton from "../components/action-button";
+import ExperienceSection from "../components/experience";
+import MainSection from "../components/main";
+import ProjectsSection from "../components/projects";
+import SocialSection from "../components/socials";
+import TechSection from "../components/technology";
 
-function HomePage() {
-  return (
-    <main className="flex min-h-[90vh] flex-col items-center justify-center gap-12 overflow-hidden px-1 md:px-2">
-      <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-8">
-        <div className="h-[30%] flex-1 md:h-full">
-          <img src={logo} alt="KA" className="h-44 w-44" />
+const Home = () => {
+    return (
+        <div className="container mx-auto p-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div className="md:col-span-2 lg:col-span-2 lg:row-span-2">
+                    <MainSection />
+                </div>
+                <div className="md:col-span-2 lg:col-span-1">
+                    <SocialSection />
+                </div>
+                <div className="md:col-span-2 lg:col-span-1 lg:row-span-2">
+                    <TechSection />
+                </div>
+                <div className="md:col-span-2 lg:col-span-2">
+                    <ExperienceSection />
+                </div>
+                <div className="col-span-1 md:col-span-2 lg:col-span-3">
+                    <ProjectsSection />
+                </div>
+            </div>
         </div>
-        <div className="flex flex-col gap-1 md:gap-2">
-          <h1 className="text-[3rem] font-extrabold sm:text-[3.5rem] md:text-[5.5rem]">
-            Kourosh Alasti
-          </h1>
-          <div className="flex flex-col gap-1">
-            <h4 className="text-lg font-semibold antialiased hover:font-[650] sm:text-xl sm:font-[650] hover:sm:font-bold">
-              Student, Designer, Developer
-            </h4>
-            <h6 className="text-base text-indigo-200/80 sm:text-sm">
-              San Francisco / Los Angeles
-            </h6>
-            <div className="flex flex-row gap-2">
-            <div className="flex flex-1 justify-between rounded-md border border-gray-700 bg-[#1e1e1e] px-3 py-2">
-              <h3>git clone kourosh-alasti</h3>
-              <a target="_blank" href="https://github.com/kourosh-alasti">
-                <CopyIcon className="text-gray-400 hover:cursor-pointer hover:text-gray-200" />
-              </a>
-            </div>
+    );
+};
 
-            <div className="border rounded-md border-gray-700 bg-[#1e1e1e] px-3 py-2">
-            <a href="https://linkedin.com/in/kourosh-alasti" target="_self">
-              <LinkedinIcon/>
-            </a>
-            </div>
-            </div>
-            {/*
-             * Commented out until alastisolutions website is up and running.  Uncomment when ready.
-             *
-             *
-            <div>
-              alastisolutions is{" "}
-              <a
-                href="https://alastisolutions.org"
-                className="font-bold no-underline hover:cursor-pointer hover:font-extrabold"
-              >
-                here
-              </a>
-            </div> */}
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
-        <ActionButton to="/projects">
-          <FolderGitIcon />
-          Projects
-        </ActionButton>
-        <ActionButton to="/experiences">
-          <BriefcaseIcon />
-          Experience
-        </ActionButton>
-        <ActionButton
-          to="mailto:coding@kouroshalasti.com?cc=kouroshalastibusiness@gmail.com"
-          target="_blank"
-        >
-          <MailIcon />
-          Email Me
-        </ActionButton>
-      </div>
-    </main>
-  );
-}
-
-export default HomePage;
+export default Home;
