@@ -1,3 +1,5 @@
+import { nanoid } from "nanoid";
+
 const EXPERIENCES = [
     {
         company: "Indian Wells Valley Youth Softball",
@@ -37,7 +39,10 @@ const ExperienceSection = () => {
             <h2 className="mb-4 text-2xl font-semibold">Experience</h2>
             <div className="flex flex-col gap-3">
                 {EXPERIENCES.map((item) => (
-                    <div className="flex flex-col gap-4 rounded-lg border border-slate-500 px-3 py-2">
+                    <div
+                        className="flex flex-col gap-4 rounded-lg border border-slate-500 px-3 py-2"
+                        key={nanoid()}
+                    >
                         <div className="flex justify-between">
                             <div className="flex flex-col gap-1">
                                 <h3 className="text-xl font-semibold">
@@ -54,7 +59,10 @@ const ExperienceSection = () => {
                         </div>
                         <div className="flex flex-row flex-wrap gap-1">
                             {item.tools.map((tool) => (
-                                <div className="rounded-md bg-indigo-600 px-2 text-[12px] font-semibold text-white">
+                                <div
+                                    className="rounded-md bg-indigo-600 px-2 text-[12px] font-semibold text-white"
+                                    key={nanoid()}
+                                >
                                     {tool}
                                 </div>
                             ))}
