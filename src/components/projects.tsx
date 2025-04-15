@@ -1,13 +1,29 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { nanoid } from "nanoid";
+
 import frauditImage from "../../src/assets/fraudit.png";
 import rmpImage from "../../src/assets/rmp.png";
 import loglitelyImage from "../../src/assets/loglitely.png";
 import passjenImage from "../../src/assets/passjen.png";
 import gomacuiImage from "../../src/assets/gomacui.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { nanoid } from "nanoid";
+import constellationsImage from "../../src/assets/constellation.png";
 
 const PROJECTS = [
+    {
+        link: "https://github.com/kourosh-alasti/constellations",
+        title: "Constellations",
+        description: "Facial Recognition Social Platform for Dementia Patients",
+        src: constellationsImage,
+        alt: "Constellations Project Image",
+        tech: [
+            "TypeScript",
+            "Next.JS",
+            "Python",
+            "FastAPI",
+            "PostgreSQL Vector",
+        ],
+    },
     {
         link: "https://github.com/kourosh-alasti/fraudit",
         title: "Fraudit",
