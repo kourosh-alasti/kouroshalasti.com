@@ -35,7 +35,7 @@ const EXPERIENCES = [
 
 const ExperienceSection = () => {
     return (
-        <div className="col-span-3 rounded border border-slate-500 p-4 shadow">
+        <div className="col-span-3 rounded-sm border border-slate-500 p-4 shadow-sm">
             <h2 className="mb-4 text-2xl font-semibold">Experience</h2>
             <div className="flex flex-col gap-3">
                 {EXPERIENCES.map((item) => (

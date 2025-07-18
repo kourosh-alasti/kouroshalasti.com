@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function SocialSection() {
     return (
-        <section className="col-span-1 flex w-full flex-row self-center rounded border border-slate-500 px-6 py-3 md:col-span-3">
+        <section className="col-span-1 flex w-full flex-row self-center rounded-sm border border-slate-500 px-6 py-3 md:col-span-3">
             <div className="flex flex-row gap-2">
                 <div className="rounded-md border border-gray-700 px-3 py-2">
                     <a target="_blank" href="https://github.com/kourosh-alasti">
