@@ -9,13 +9,13 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
 const options = {
-    api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST!,
+    api_host: import.meta.env.VITE_POSTHOG_HOST!,
 }
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <PostHogProvider
-            apiKey={process.env.REACT_APP_PUBLIC_POSTHOG_KEY!}
+            apiKey={import.meta.env.VITE_POSTHOG_KEY!}
             options={options}
         >
             <RouterProvider router={router} />

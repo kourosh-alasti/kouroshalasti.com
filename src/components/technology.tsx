@@ -21,7 +21,7 @@ const TECH = [
     },
     {
         name: "Next.js",
-        icon: "https://nextjs.org/static/favicon/favicon-32x32.png",
+        icon: "https://nextjs.org/favicon.ico",
         homepage: "https://nextjs.org/",
     },
     {
@@ -50,6 +50,11 @@ const TECH = [
         homepage: "https://svelte.dev/",
     },
     {
+        name: "Vue",
+        icon: "https://vuejs.org/logo.svg",
+        homepage: "https://vuejs.org/",
+    },
+    {
         name: "Astro",
         icon: "https://astro.build/favicon.svg",
         homepage: "https://astro.build/",
@@ -64,11 +69,16 @@ const TECH = [
         icon: "https://isocpp.org/favicon.ico",
         homepage: "https://isocpp.org/",
     },
+    {
+        name: "Python",
+        icon: "https://www.python.org/static/favicon.ico",
+        homepage: "https://www.python.org"
+    }
 ];
 
 function TechSection() {
     return (
-        <div className="col-span-1 rounded border border-slate-500 p-4 shadow">
+        <div className="col-span-1 rounded-sm border border-slate-500 p-4 shadow-sm">
             <h2 className="mb-2 text-2xl font-semibold">Technologies</h2>
             <div className="flex flex-row flex-wrap gap-1 lg:flex-col lg:flex-nowrap">
                 {TECH.map((item) => (
@@ -77,7 +87,7 @@ function TechSection() {
                         href={item.homepage}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 rounded border border-slate-500 p-2 transition-colors duration-200"
+                        className="flex items-center space-x-2 rounded-sm border border-slate-500 p-2 transition-colors duration-200"
                     >
                         <img
                             src={item.icon}
