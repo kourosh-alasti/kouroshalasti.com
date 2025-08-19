@@ -14,10 +14,20 @@ const PROJECTS = [
     {
         link: "https://github.com/futdrafts/futdrafts.com",
         title: "FutDrafts",
-        description: "Full Stack Fantasy Soccer Application, enhanced with AI predictions and draft suggestions",
+        description:
+            "Full Stack Fantasy Soccer Application, enhanced with AI predictions and draft suggestions",
         src: futdraftsImage,
         alt: "FutDrafts Project Image",
-        tech: [ "TypeScript", "Next.JS", "Python", "FastAPI", "Docker", "TailwindCSS", "React", "Redis"],
+        tech: [
+            "TypeScript",
+            "Next.JS",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "TailwindCSS",
+            "React",
+            "Redis",
+        ],
         award: "3rd Place",
     },
     {
@@ -105,11 +115,12 @@ const ProjectsSection = () => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-s:event={`Project Click: ${item.title}`}
                         className="group relative flex h-full w-full cursor-pointer flex-col items-center gap-4 justify-self-center rounded-sm border border-slate-500 bg-[#1e1e1e] p-6 text-sm font-medium shadow-xs transition sm:flex-row sm:justify-self-stretch md:p-2"
                     >
                         <FontAwesomeIcon
                             icon={faArrowUpRightFromSquare}
-                            className="absolute right-5 top-5 h-4 w-4 transition-all group-hover:right-4 group-hover:top-4"
+                            className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4"
                         />
                         <span className="relative aspect-[1.57142847] w-32 shrink-0 cursor-pointer overflow-hidden rounded-xl sm:rounded-lg">
                             <img
@@ -120,12 +131,15 @@ const ProjectsSection = () => {
                             />
                         </span>
                         <div className="flex flex-col gap-2">
-                            <div className="flex flex-row gap-1 items-center">
-
-                            <h3 className="text-center text-lg font-bold uppercase tracking-wide sm:text-start">
-                                {item.title}
-                            </h3>
-                                {item.award && <span className="px-1 py-0.5 rounded-sm bg-amber-300 text-amber-700">{item.award}</span> }
+                            <div className="flex flex-row items-center gap-1">
+                                <h3 className="text-center text-lg font-bold tracking-wide uppercase sm:text-start">
+                                    {item.title}
+                                </h3>
+                                {item.award && (
+                                    <span className="rounded-sm bg-amber-300 px-1 py-0.5 text-amber-700">
+                                        {item.award}
+                                    </span>
+                                )}
                             </div>
                             <p className="max-w-full text-center sm:text-start">
                                 {item.description}
