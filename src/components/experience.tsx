@@ -2,10 +2,27 @@ import { nanoid } from "nanoid";
 
 const EXPERIENCES = [
     {
+        company: "PBXFlex",
+        position: "Software Engineer",
+        location: "Remote",
+        dates: "July 2025 - Present",
+        tools: [
+            "TypeScript",
+            "JavaScript",
+            "Next.js",
+            "Express",
+            "RabbitMQ",
+            "Kubernetes",
+            "GKE",
+            "Docker",
+            "Sentry"
+        ]
+    },
+    {
         company: "SchottMD",
         position: "Fullstack Contractor",
         location: "Remote",
-        dates: "Aug. 2025 - Now",
+        dates: "July 2025 - Present",
         tools: [
             "TypeScript",
             "React",
@@ -15,7 +32,7 @@ const EXPERIENCES = [
             "Redis",
             "AWS SES",
             "AWS S3",
-            "AWS EC2",
+            "AWS RDS",
         ],
     },
     {
