@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { nanoid } from "nanoid";
+import { ArrowSquareUpIcon } from "@phosphor-icons/react";
 
 import frauditImage from "../../src/assets/fraudit.png";
 import rmpImage from "../../src/assets/rmp.png";
@@ -118,10 +117,7 @@ const ProjectsSection = () => {
                         data-s:event={`Project Click: ${item.title}`}
                         className="group relative flex h-full w-full cursor-pointer flex-col items-center gap-4 justify-self-center rounded-sm border border-slate-500 bg-[#1e1e1e] p-6 text-sm font-medium shadow-xs transition sm:flex-row sm:justify-self-stretch md:p-2"
                     >
-                        <FontAwesomeIcon
-                            icon={faArrowUpRightFromSquare}
-                            className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4"
-                        />
+                        <ArrowSquareUpIcon className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4" />
                         <span className="relative aspect-[1.57142847] w-32 shrink-0 cursor-pointer overflow-hidden rounded-xl sm:rounded-lg">
                             <img
                                 src={item.src}
