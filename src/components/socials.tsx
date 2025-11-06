@@ -5,6 +5,7 @@ import {
     EnvelopeOpenIcon,
     FilePdfIcon,
 } from "@phosphor-icons/react";
+import { event } from "onedollarstats";
 
 function SocialSection() {
     return (
@@ -14,7 +15,7 @@ function SocialSection() {
                     <a
                         target="_blank"
                         href="https://github.com/kourosh-alasti"
-                        data-s:event="Github Visit"
+                        onClick={() => event("Github Visit")}
                     >
                         <GithubLogoIcon />
                     </a>
@@ -24,7 +25,7 @@ function SocialSection() {
                     <a
                         href="https://linkedin.com/in/kourosh-alasti"
                         target="_blank"
-                        data-s:event="Linkedin Visit"
+                        onClick={() => event("Linkedin Visit")}
                     >
                         <LinkedinLogoIcon />
                     </a>
@@ -33,14 +34,14 @@ function SocialSection() {
                 <div className="rounded-md border border-gray-700 px-3 py-2">
                     <a
                         href="mailto:kouroshalastibusiness@gmail.com"
-                        data-s:event="Email Click"
+                        onClick={() => event("Email Visit")}
                     >
                         <EnvelopeOpenIcon />
                     </a>
                 </div>
 
                 <div className="rounded-md border border-gray-700 px-3 py-2">
-                    <Link to="/resume" data-s:event="Resume View">
+                    <Link to="/resume" onClick={() => event("Resume View")}>
                         <FilePdfIcon />
                     </Link>
                 </div>

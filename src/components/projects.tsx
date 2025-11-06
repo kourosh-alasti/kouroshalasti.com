@@ -8,6 +8,7 @@ import passjenImage from "../../src/assets/passjen.png";
 import gomacuiImage from "../../src/assets/gomacui.png";
 import constellationsImage from "../../src/assets/constellation.png";
 import futdraftsImage from "../../src/assets/futdrafts.png";
+import { event } from "onedollarstats";
 
 const PROJECTS = [
     {
@@ -114,7 +115,7 @@ const ProjectsSection = () => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-s:event={`Project Click: ${item.title}`}
+                        onClick={() => event(`Project Click: ${item.title}`)}
                         className="group relative flex h-full w-full cursor-pointer flex-col items-center gap-4 justify-self-center rounded-sm border border-slate-500 bg-[#1e1e1e] p-6 text-sm font-medium shadow-xs transition sm:flex-row sm:justify-self-stretch md:p-2"
                     >
                         <ArrowSquareUpIcon className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4" />
