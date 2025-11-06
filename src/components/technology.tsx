@@ -31,7 +31,7 @@ const TECH = [
     },
     {
         name: "React Native",
-        icon: "https://reactnative.dev/img/favicon.ico",
+        icon: "https://reactnative.dev/favicon.ico",
         homepage: "https://reactnative.dev/",
     },
     {
@@ -72,8 +72,8 @@ const TECH = [
     {
         name: "Python",
         icon: "https://www.python.org/static/favicon.ico",
-        homepage: "https://www.python.org"
-    }
+        homepage: "https://www.python.org",
+    },
 ];
 
 function TechSection() {
