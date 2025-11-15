@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 
 const options = {
     cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
-    standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts`,
+    standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts/`,
 };
 
 const ResumePage = () => {
@@ -16,7 +16,7 @@ const ResumePage = () => {
 
     return (
         <div className="flex min-h-[90vh] w-fit flex-col items-center justify-center gap-2">
-            <div className="flex h-12 w-full items-center gap-4 rounded-sm bg-slate-500/30 px-4">
+            <div className="flex h-12 w-full items-center justify-between gap-4 rounded-sm bg-slate-500/30 px-4">
                 <Link to="/">
                     <button className="flex items-center gap-1 rounded-sm border border-slate-500 px-2 py-1">
                         <ArrowLeftIcon />
