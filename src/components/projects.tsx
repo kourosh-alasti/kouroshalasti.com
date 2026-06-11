@@ -1,16 +1,31 @@
 import { nanoid } from "nanoid";
-import { ArrowSquareUpIcon } from "@phosphor-icons/react";
-
-import frauditImage from "../../src/assets/fraudit.png";
-import rmpImage from "../../src/assets/rmp.png";
-import loglitelyImage from "../../src/assets/loglitely.png";
-import passjenImage from "../../src/assets/passjen.png";
-import gomacuiImage from "../../src/assets/gomacui.png";
-import constellationsImage from "../../src/assets/constellation.png";
-import futdraftsImage from "../../src/assets/futdrafts.png";
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import { event } from "onedollarstats";
 
+import tenancyImage from "../../src/assets/better-auth-tenancy.png";
+import frauditImage from "../../src/assets/fraudit.png";
+import healthzkitImage from "../../src/assets/healthzkit.png";
+import constellationsImage from "../../src/assets/constellation.png";
+import futdraftsImage from "../../src/assets/futdrafts.png";
+
 const PROJECTS = [
+  {
+    link: "https://github.com/alasti-company/healthzkit.dev",
+    title: "Healthzkit.dev",
+    description:
+      "Framework agnostic health checks with parallel runs, status rollup, and background scheduling",
+    src: healthzkitImage,
+    alt: "Healthzkit Image",
+    tech: ["TypeScript", "Vite+"],
+  },
+  {
+    link: "https://github.com/kourosh-alasti/better-auth-tenancy",
+    title: "@better-auth/tenancy",
+    description: "Multi-tenancy plugin for the Better Auth framework.",
+    src: tenancyImage,
+    alt: "Better-Auth Tenancy Image",
+    tech: ["TypeScript", "Better-Auth"],
+  },
   {
     link: "https://github.com/futdrafts/futdrafts.com",
     title: "FutDrafts",
@@ -37,40 +52,40 @@ const PROJECTS = [
     alt: "Fraudit Project Image",
     tech: ["Next.JS", "TypeScript", "TailwindCSS", "Drizzle", "Clerk", "Neon DB", "PostgreSQL"],
   },
-  {
-    link: "https://github.com/kourosh-alasti/fraudit/tree/master/src/app/(main)/rmp",
-    title: "Fraudit Rate My Professor",
-    description:
-      "Open Source Rate My Professor Clone for students who want to implement a rating system for highschool teachers",
-    src: rmpImage,
-    alt: "Fraudit RMP Project Image",
-    tech: ["Next.JS", "TypeScript", "Drizzle", "Clerk", "Neon DB", "PostgreSQL"],
-  },
-  {
-    link: "https://github.com/kourosh-alasti/loglitely",
-    title: "Loglitely",
-    description: "A TypeScript first logger.",
-    src: loglitelyImage,
-    alt: "Loglitely Project Image",
-    tech: ["TypeScript", "JavaScript", "Node.JS", "NPM", "Git"],
-  },
-  {
-    link: "https://github.com/kourosh-alasti/passjen",
-    title: "Passjen",
-    description:
-      "A Zero Dependency, secure password generator and hasher for TypeScript/JavaScript applications.",
-    src: passjenImage,
-    alt: "Passjen Project Image",
-    tech: ["TypeScript", "Node.JS", "NPM", "Git"],
-  },
-  {
-    link: "https://github.com/kourosh-alasti/go-macui",
-    title: "Go MacUI",
-    description: "GO MacOS Native UI Library",
-    src: gomacuiImage,
-    alt: "Go MacUI Project Image",
-    tech: ["Go", "Obj-C", "C", "Metal", "Git"],
-  },
+  // {
+  //   link: "https://github.com/kourosh-alasti/fraudit/tree/master/src/app/(main)/rmp",
+  //   title: "Fraudit Rate My Professor",
+  //   description:
+  //     "Open Source Rate My Professor Clone for students who want to implement a rating system for highschool teachers",
+  //   src: rmpImage,
+  //   alt: "Fraudit RMP Project Image",
+  //   tech: ["Next.JS", "TypeScript", "Drizzle", "Clerk", "Neon DB", "PostgreSQL"],
+  // },
+  // {
+  //   link: "https://github.com/kourosh-alasti/loglitely",
+  //   title: "Loglitely",
+  //   description: "A TypeScript first logger.",
+  //   src: loglitelyImage,
+  //   alt: "Loglitely Project Image",
+  //   tech: ["TypeScript", "JavaScript", "Node.JS", "NPM", "Git"],
+  // },
+  // {
+  //   link: "https://github.com/kourosh-alasti/passjen",
+  //   title: "Passjen",
+  //   description:
+  //     "A Zero Dependency, secure password generator and hasher for TypeScript/JavaScript applications.",
+  //   src: passjenImage,
+  //   alt: "Passjen Project Image",
+  //   tech: ["TypeScript", "Node.JS", "NPM", "Git"],
+  // },
+  // {
+  //   link: "https://github.com/kourosh-alasti/go-macui",
+  //   title: "Go MacUI",
+  //   description: "GO MacOS Native UI Library",
+  //   src: gomacuiImage,
+  //   alt: "Go MacUI Project Image",
+  //   tech: ["Go", "Obj-C", "C", "Metal", "Git"],
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -87,7 +102,7 @@ const ProjectsSection = () => {
             onClick={() => event(`Project Click: ${item.title}`)}
             className="group relative flex h-full w-full cursor-pointer flex-col items-center gap-4 justify-self-center rounded-sm border border-slate-500 bg-[#1e1e1e] p-6 text-sm font-medium shadow-xs transition sm:flex-row sm:justify-self-stretch md:p-2"
           >
-            <ArrowSquareUpIcon className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4" />
+            <ArrowUpRightIcon className="absolute top-5 right-5 h-4 w-4 transition-all group-hover:top-4 group-hover:right-4" />
             <span className="relative aspect-[1.57142847] w-32 shrink-0 cursor-pointer overflow-hidden rounded-xl sm:rounded-lg">
               <img
                 src={item.src}
