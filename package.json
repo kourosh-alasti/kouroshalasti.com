@@ -15,7 +15,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "clsx": "^2.1.1",
     "nanoid": "^5.1.6",
-    "onedollarstats": "^0.0.10",
+    "onedollarstats": "^0.0.23",
     "pdfjs-dist": "^6.0.227",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

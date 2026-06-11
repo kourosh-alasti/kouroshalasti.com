@@ -21,8 +21,8 @@ importers:
         specifier: ^5.1.6
         version: 5.1.11
       onedollarstats:
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.0.23
+        version: 0.0.23(react@19.2.7)
       pdfjs-dist:
         specifier: ^6.0.227
         version: 6.0.227
@@ -1099,9 +1099,19 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  onedollarstats@0.0.10:
-    resolution: {integrity: sha512-+s2o5qBuKej2BrbJDqVRZr9U7F0ERBsNjXIJs1DSy2yK4yNk8z5iM0nHuwhelbNgqyVEwckCV7BJ9MsP/c8kQw==}
-    deprecated: 'Improved event method: cleaner path/props handling. Use >=0.0.16'
+  onedollarstats@0.0.23:
+    resolution: {integrity: sha512-wn8hy4wDJjeC9+1lVcKyLQ69iWmyIKx55t4IehaaJhDW/P1lbAXV25CDsICgAGbtljyszNpAf9hzr09af8Waxw==}
+    peerDependencies:
+      expo-router: '>=3.0.0'
+      react: '>=18.0.0'
+      react-native: '>=0.73.0'
+    peerDependenciesMeta:
+      expo-router:
+        optional: true
+      react:
+        optional: true
+      react-native:
+        optional: true
 
   oxfmt@0.54.0:
     resolution: {integrity: sha512-DjnMwn7smSLF+Mc2+pRItnuPftm/dkUFpY/d4+33y9TfKrsHZo8GLhmUg9BrOIUEy94Rlom1Q11N6vuhE+e0oQ==}
@@ -1961,7 +1971,9 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  onedollarstats@0.0.10: {}
+  onedollarstats@0.0.23(react@19.2.7):
+    optionalDependencies:
+      react: 19.2.7
 
   oxfmt@0.54.0:
     dependencies:
