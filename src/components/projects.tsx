@@ -7,11 +7,34 @@ import frauditImage from "../../src/assets/fraudit.png";
 import healthzkitImage from "../../src/assets/healthzkit.png";
 import constellationsImage from "../../src/assets/constellation.png";
 import futdraftsImage from "../../src/assets/futdrafts.png";
+import shipdImage from "../../src/assets/shipd.png";
 
 const PROJECTS = [
   {
+    link: "https://useshipd.com",
+    title: "Shipd",
+    description:
+      "Config-as-code feature flags with local evaluation, targeting rules, and type-safe SDKs",
+    src: shipdImage,
+    alt: "Shipd Image",
+    tech: [
+      "TypeScript",
+      "React",
+      "Hono",
+      "Drizzle",
+      "Postgres",
+      "Redis",
+      "S3",
+      "Sentry",
+      "Axiom",
+      "Docker",
+      "Cloudflare",
+      "Github Actions",
+    ],
+  },
+  {
     link: "https://github.com/alasti-company/healthzkit.dev",
-    title: "Healthzkit.dev",
+    title: "Healthzkit",
     description:
       "Framework agnostic health checks with parallel runs, status rollup, and background scheduling",
     src: healthzkitImage,

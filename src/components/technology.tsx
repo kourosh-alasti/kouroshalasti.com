@@ -1,23 +1,13 @@
 const TECH = [
   {
-    name: "JavaScript",
-    icon: "https://img.icons8.com/color/48/javascript--v1.png",
-    homepage: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    name: "Node.js",
+    icon: "https://img.icons8.com/fluency/48/node-js.png",
+    homepage: "https://nodejs.org/",
   },
   {
     name: "React",
     icon: "https://reactjs.org/favicon.ico",
     homepage: "https://reactjs.org/",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://www.typescriptlang.org/favicon-32x32.png",
-    homepage: "https://www.typescriptlang.org/",
-  },
-  {
-    name: "Node.js",
-    icon: "https://img.icons8.com/fluency/48/node-js.png",
-    homepage: "https://nodejs.org/",
   },
   {
     name: "Next.js",
@@ -36,13 +26,8 @@ const TECH = [
   },
   {
     name: "Express",
-    icon: "https://expressjs.com/images/favicon.png",
+    icon: "https://expressjs.com/favicon.ico",
     homepage: "https://expressjs.com/",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "https://www.postgresql.org/favicon.ico",
-    homepage: "https://www.postgresql.org/",
   },
   {
     name: "Svelte",
@@ -50,9 +35,14 @@ const TECH = [
     homepage: "https://svelte.dev/",
   },
   {
-    name: "Vue",
-    icon: "https://vuejs.org/logo.svg",
-    homepage: "https://vuejs.org/",
+    name: "JavaScript",
+    icon: "https://img.icons8.com/color/48/javascript--v1.png",
+    homepage: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://www.typescriptlang.org/favicon-32x32.png",
+    homepage: "https://www.typescriptlang.org/",
   },
   {
     name: "Astro",
@@ -73,6 +63,16 @@ const TECH = [
     name: "Python",
     icon: "https://www.python.org/static/favicon.ico",
     homepage: "https://www.python.org",
+  },
+  {
+    name: "Rust",
+    icon: "https://rust-lang.org/static/images/favicon.svg",
+    homepage: "https://rust-lang.org/",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://www.postgresql.org/favicon.ico",
+    homepage: "https://www.postgresql.org/",
   },
 ];
 
