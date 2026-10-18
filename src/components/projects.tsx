@@ -8,6 +8,7 @@ import healthzkitImage from "../../src/assets/healthzkit.png";
 import constellationsImage from "../../src/assets/constellation.png";
 import futdraftsImage from "../../src/assets/futdrafts.png";
 import shipdImage from "../../src/assets/shipd.png";
+import wikiflaiImage from "../../src/assets/wikiflai.png";
 
 const PROJECTS = [
   {
@@ -29,7 +30,26 @@ const PROJECTS = [
       "Axiom",
       "Docker",
       "Cloudflare",
-      "Github Actions",
+      "GitHub Actions",
+    ],
+  },
+  {
+    link: "https://wikiflai.com",
+    title: "WikiFlai",
+    description:
+      "Collaborative knowledge bases and public wikis with real-time editing, version history, and MCP integration for AI agents",
+    src: wikiflaiImage,
+    alt: "WikiFlai Image",
+    tech: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Convex",
+      "Clerk",
+      "Stripe",
+      "Sentry",
+      "GitHub Actions",
+      "Vercel",
     ],
   },
   {
@@ -56,7 +76,16 @@ const PROJECTS = [
       "Full Stack Fantasy Soccer Application, enhanced with AI predictions and draft suggestions",
     src: futdraftsImage,
     alt: "FutDrafts Project Image",
-    tech: ["TypeScript", "Next.JS", "Python", "FastAPI", "Docker", "TailwindCSS", "React", "Redis"],
+    tech: [
+      "TypeScript",
+      "Next.JS",
+      "Python",
+      "FastAPI",
+      "Docker",
+      "TailwindCSS",
+      "React",
+      "Redis",
+    ],
     award: "3rd Place",
   },
   {
@@ -70,10 +99,19 @@ const PROJECTS = [
   {
     link: "https://github.com/kourosh-alasti/fraudit",
     title: "Fraudit",
-    description: "Open Source Reddit Clone to bootstrap social platform development",
+    description:
+      "Open Source Reddit Clone to bootstrap social platform development",
     src: frauditImage,
     alt: "Fraudit Project Image",
-    tech: ["Next.JS", "TypeScript", "TailwindCSS", "Drizzle", "Clerk", "Neon DB", "PostgreSQL"],
+    tech: [
+      "Next.JS",
+      "TypeScript",
+      "TailwindCSS",
+      "Drizzle",
+      "Clerk",
+      "Neon DB",
+      "PostgreSQL",
+    ],
   },
   // {
   //   link: "https://github.com/kourosh-alasti/fraudit/tree/master/src/app/(main)/rmp",
@@ -145,7 +183,9 @@ const ProjectsSection = () => {
                   </span>
                 )}
               </div>
-              <p className="max-w-full text-center sm:text-start">{item.description}</p>
+              <p className="max-w-full text-center sm:text-start">
+                {item.description}
+              </p>
               <div className="flex flex-wrap items-center justify-center gap-1 sm:justify-normal">
                 {item.tech.map((i, index) => (
                   <span
